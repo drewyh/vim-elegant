@@ -8,7 +8,7 @@ syntax match elegantNumber "\v<\d*\.?\d+([Ee]-?)?\d+>"
 " match string
 syntax region elegantString start=/"/ skip=/\\"/ end=/"/
 " match functions
-syntax region elegantFunction start="^&[_a-zA-Z]+\w*$" end="^&end$"
+syntax match elegantFunction "^&.*$"
 " link the highlighting
 highlight default link elegantComment Comment
 highlight default link elegantNumber Number
